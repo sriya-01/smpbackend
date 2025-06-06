@@ -1,6 +1,6 @@
 import TeamGallery from '../../models/TeamModel/TeamGalleryModel.js';
 
-// Get current data (assuming only one document)
+
 export const getGallery = async (req, res) => {
   const data = await TeamGallery.findOne();
   res.json(data);

@@ -1,4 +1,4 @@
-// import TrainingGalleryHeading from "../../models/TrainingModel/trainingGalleryHeadingModel.js";
+
 // import TrainingGalleryImage from "../../models/TrainingModel/trainingGalleryImagesModel.js";
 
 // // ---------- HEADING CONTROLLERS ----------
