@@ -1,4 +1,4 @@
-import TeamGallery from '../../models/TeamModel/TeamGalleryModel.js';
+import TeamGallery from '../../models/TeamModel/teamGalleryModel.js';
 
 
 export const getGallery = async (req, res) => {
