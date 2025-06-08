@@ -32,7 +32,24 @@ import teamGalleryRoutes from './routes/TeamRoutes/teamGalleryRoutes.js'
 import aboutDirectorRoutes from './routes/OurCompanyRoutes/aboutDirectorRoutes.js'
 import companyGalleryRoutes from './routes/OurCompanyRoutes/companyGalleryRoutes.js'
 import trainingGalleryRoutes from './routes/Training/trainingGalleryRoutes.js'
-
+import videoRoutes from './routes/Training/videoRoutes.js'
+import allBannerRoutes from './routes/allBannerRoutes.js'
+import imageRoutes from './routes/imageRoutes.js'
+import educatorRoutes from './routes/educatorRoutes.js'
+import marketingProofRoutes from './routes/ResourceRoutes/marketingProofRoutes.js'
+import webVideoRoutes from './routes/serviceRoutes/webDesignRoutes/webVideoRoutes.js'
+import organicVideoRoutes from "./routes/serviceRoutes/organicMarketingRoutes/organicVideoRoutes.js"
+import organiccraftRoutes from "./routes/serviceRoutes/organicMarketingRoutes/organiccraftRoutes.js"
+import googleVideoRoutes from "./routes/serviceRoutes/googleAdsRoutes/googleVideoRoutes.js"
+import contentVideoRoutes from "./routes/serviceRoutes/contentMarketingRoutes/contentVideoRoutes.js"
+import socialVideoRoutes from "./routes/serviceRoutes/socialMediaRoutes/socialVideoRoutes.js"
+import socialUserImageRoutes from './routes/serviceRoutes/socialMediaRoutes/socialUserImageRoutes.js';
+import craftSocialRoutes from "./routes/serviceRoutes/socialMediaRoutes/craftSocialRoutes.js"
+import craftGoogleRoutes from "./routes/serviceRoutes/googleAdsRoutes/craftGoogleRoutes.js"
+import craftContentRoutes from "./routes/serviceRoutes/contentMarketingRoutes/craftContentRoutes.js"
+import craftRoutes from './routes/serviceRoutes/webDesignRoutes/craftRoutes.js';
+import authRoutes from './routes/authRoutes.js'
+import protectedRoutes from './routes/protectedRoutes.js'
 
 dotenv.config()
 const app = express()
@@ -59,6 +76,26 @@ app.use("/api/team-gallery",teamGalleryRoutes);
 app.use("/api/about-director",aboutDirectorRoutes);
 app.use("/api/company-gallery",companyGalleryRoutes);
 app.use("/api/training-gallery",trainingGalleryRoutes);
+app.use('/api/videos', videoRoutes);
+app.use('/api/all-banners', allBannerRoutes);
+app.use('/api/images',imageRoutes);
+app.use('/api/educator',educatorRoutes);
+app.use('/api/marketing-proof',marketingProofRoutes);
+app.use('/api/webvideo',webVideoRoutes)
+app.use('/api/organicvideo', organicVideoRoutes);       
+app.use('/api/organicCraft', organiccraftRoutes);
+app.use('/api/googlevideo', googleVideoRoutes);       
+app.use('/api/socialvideo', socialVideoRoutes);       
+app.use('/api/contentvideo', contentVideoRoutes);       
+app.use('/api/socialImage', socialUserImageRoutes);
+app.use('/api/socialCraft', craftSocialRoutes);
+app.use('/api/contentCraft', craftContentRoutes);
+app.use('/api/googleCraft', craftGoogleRoutes);
+app.use('/api/craft', craftRoutes);
+app.use('/api/auth', authRoutes);
+app.use('/api', protectedRoutes);
+
+
 
 
 // DB and Server Start
