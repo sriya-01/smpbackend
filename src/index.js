@@ -50,6 +50,7 @@ import craftContentRoutes from "./routes/serviceRoutes/contentMarketingRoutes/cr
 import craftRoutes from './routes/serviceRoutes/webDesignRoutes/craftRoutes.js';
 import authRoutes from './routes/authRoutes.js'
 import protectedRoutes from './routes/protectedRoutes.js'
+import reviewRoutes from './routes/reviewRoutes.js'
 
 dotenv.config()
 const app = express()
@@ -94,7 +95,8 @@ app.use('/api/googleCraft', craftGoogleRoutes);
 app.use('/api/craft', craftRoutes);
 app.use('/api/auth', authRoutes);
 app.use('/api', protectedRoutes);
-
+app.use('/api/review-card', reviewRoutes);
+ 
 
 
 
