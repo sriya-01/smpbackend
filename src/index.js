@@ -51,6 +51,7 @@ import craftRoutes from './routes/serviceRoutes/webDesignRoutes/craftRoutes.js';
 import authRoutes from './routes/authRoutes.js'
 import protectedRoutes from './routes/protectedRoutes.js'
 import reviewRoutes from './routes/reviewRoutes.js'
+import formComponentRoutes from './routes/formComponentRoutes.js'
 
 dotenv.config()
 const app = express()
@@ -96,7 +97,7 @@ app.use('/api/craft', craftRoutes);
 app.use('/api/auth', authRoutes);
 app.use('/api', protectedRoutes);
 app.use('/api/review-card', reviewRoutes);
- 
+app.use('/api/form-contact',formComponentRoutes);
 
 
 
