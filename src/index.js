@@ -67,6 +67,11 @@ app.use('/uploads', express.static('uploads'))
 //   credentials: true 
 // }));
 
+app.use(cors({
+  origin: 'https://safari-marketing-pro.netlify.app', 
+  methods: ['POST'],
+}));
+
 
 // Routes
 app.use('/api/banner', bannerRoutes)
