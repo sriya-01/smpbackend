@@ -9,7 +9,7 @@ dotenv.config();
 const router = express.Router();
 
 router.post('/', async (req, res) => {
-  const { firstName, email, countryCode, phone, website, captchaToken } = req.body;
+  const { firstName, email, countryCode, phone, website,selectServices, bestTimetoCall, captchaToken } = req.body;
 
   if (!captchaToken) return res.status(400).json({ message: 'Captcha required' });
 
@@ -44,6 +44,8 @@ router.post('/', async (req, res) => {
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Phone:</strong> ${countryCode} ${phone}</p>
         <p><strong>Website:</strong> ${website}</p>
+        <p><strong>select Services:</strong> ${selectServices}</p>
+        <p><strong>best Time to Call:</strong> ${bestTimetoCall}</p>
       `,
     };
 
