@@ -102,8 +102,7 @@ app.use('/api/craft', craftRoutes);
 app.use('/api/auth', authRoutes);
 app.use('/api', protectedRoutes);
 app.use('/api/review-card', reviewRoutes);
-app.use('/api/form-contact',formComponentRoutes);
-
+app.use('/api/form-contact', formComponentRoutes);
 
 
 // DB and Server Start
