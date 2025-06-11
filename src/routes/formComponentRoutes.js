@@ -153,7 +153,7 @@ router.post('/', async (req, res) => {
     // Verify reCAPTCHA
     const captchaRes = await axios.post('https://www.google.com/recaptcha/api/siteverify', null, {
       params: {
-        secret: process.env.RECAPTCHA_SECRET_KEY,
+        secret:'6Lf2glwrAAAAAMbHo2MGjCY3QIGUcEIZj-2UEIR2',
         response: captchaToken,
       },
     });
@@ -166,8 +166,8 @@ router.post('/', async (req, res) => {
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: process.env.GMAIL_USER,
-        pass: process.env.GMAIL_PASS,
+        user: 'mwsplpitambar@gmail.com',
+        pass:'zgyi nfja fbdm exhr',
       },
     });
 
