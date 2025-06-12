@@ -54,6 +54,9 @@ import reviewRoutes from './routes/reviewRoutes.js'
 import formComponentRoutes from './routes/formComponentRoutes.js'
 import contacts from './routes/contacts.js'
 import requestFormRoutes from './routes/requestFormRoutes.js'
+import contactusFormRoutes from './routes/contactusFormRoutes.js'
+
+
 
 dotenv.config()
 const app = express()
@@ -107,6 +110,8 @@ app.use('/api/review-card', reviewRoutes);
 app.use('/api/form-contact', formComponentRoutes);
 app.use('/api/contacts', contacts);
 app.use('/api/request-form',requestFormRoutes);
+app.use('/api/contactus-form',contactusFormRoutes);
+
 
 
 
