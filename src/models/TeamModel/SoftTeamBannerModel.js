@@ -9,6 +9,7 @@ const softbannerSchema = new mongoose.Schema({
      content:{
       type:String
     },
+   
   image: 
     { 
         type: String
