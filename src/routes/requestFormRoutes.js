@@ -105,7 +105,7 @@ router.post('/', async (req, res) => {
       to: 'pitambermajhi33@gmail.com',
       subject: 'New Contact Form Submission',
  html: `
-  <div style="font-family: Arial, sans-serif; border: 1px solid #ddd; padding-top: 20px; max-width: 600px; margin: auto;">
+  <div style="font-family: Arial, sans-serif; border: 1px solid #ddd; padding-top: 20px;padding-left: 20px; padding-right: 20px; max-width: 600px; margin: auto;">
     
     <!-- Logo + Heading Table -->
     <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-bottom: 2px solid #0d6efd; margin-bottom: 20px;">
@@ -124,7 +124,7 @@ router.post('/', async (req, res) => {
     </table>
 
     <!-- Body Content -->
-    <p>You have received a new Tailor-Made Safari Experiences form. Below are the details:</p>
+    <p>You have received a new Request A Free Strategies Form form. Below are the details:</p>
 
     <table style="width: 100%; border-collapse: collapse;">
       <tr><td><strong>First Name:</strong></td><td>${firstName}</td></tr>
