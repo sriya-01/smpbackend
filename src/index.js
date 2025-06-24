@@ -56,7 +56,7 @@ import contacts from './routes/contacts.js'
 import requestFormRoutes from './routes/requestFormRoutes.js'
 import contactusFormRoutes from './routes/contactusFormRoutes.js'
 import teamSoftRoutes from './routes/TeamRoutes/teamSoftRoutes.js'
-
+import paymentRoutes from './routes/paymentRoutes.js'
 
 
 dotenv.config()
@@ -113,7 +113,7 @@ app.use('/api/contacts', contacts);
 app.use('/api/request-form',requestFormRoutes);
 app.use('/api/contactus-form',contactusFormRoutes);
 app.use("/api/soft-team-banner",teamSoftRoutes);
-
+app.use("/api/payment", paymentRoutes);
 
 
 
