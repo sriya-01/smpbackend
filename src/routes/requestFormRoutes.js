@@ -138,7 +138,7 @@ router.post('/', async (req, res) => {
     <p>Regards,<br>Safari Marketing Pro Team</p>
 
     <!-- Footer -->
-    <div style="background-color: #0d6efd; color:3D3EC2; padding: 10px; text-align: center; margin-top: 30px;">
+    <div style="background-color: #3D3EC2; color: #ffffff; padding: 10px; text-align: center; margin-top: 30px;">
       © 2024 - 2025 By Safari Marketing Pro.<br>
       Lameck Laaya Moshi Tz, 1518, Tanzania
     </div>
