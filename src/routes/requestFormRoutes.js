@@ -105,37 +105,46 @@ router.post('/', async (req, res) => {
       to: 'pitambermajhi33@gmail.com',
       subject: 'New Contact Form Submission',
  html: `
+  <div style="font-family: Arial, sans-serif; border: 1px solid #ddd; padding-top: 20px; max-width: 600px; margin: auto;">
+    
+    <!-- Logo + Heading Table -->
+    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-bottom: 2px solid #0d6efd; margin-bottom: 20px;">
+      <tr>
+        <td align="left" style="padding: 0;">
+          <img 
+            src="https://safarimarketingpro.com/images/smp-logo.png" 
+            alt="Safari Marketing Pro Logo" 
+            style="max-height: 50px; width: 130px;"
+          />
+        </td>
+        <td align="right" style="padding: 0;">
+          <h2 style="color: #0d6efd; font-family: Arial, sans-serif; margin: 0;">Safari Marketing Pro</h2>
+        </td>
+      </tr>
+    </table>
 
-  <div style="font-family: Arial, sans-serif; border: 1px solid #ddd; padding: 20px; max-width: 600px; margin: auto;">
-  <div style="border-bottom: 2px solid #0d6efd; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center;">
-    <img 
-      src="https://safarimarketingpro.com/images/smp-logo.png" 
-      alt="Logo" 
-      style="max-height: 50px; width: 130px; filter: invert(100%) brightness(0%);"
-    />
-    <h2 style="color: #0d6efd; margin: 0;">Safari Marketing Pro</h2>
+    <!-- Body Content -->
+    <p>You have received a new Tailor-Made Safari Experiences form. Below are the details:</p>
+
+    <table style="width: 100%; border-collapse: collapse;">
+      <tr><td><strong>First Name:</strong></td><td>${firstName}</td></tr>
+      <tr><td><strong>Email:</strong></td><td>${email}</td></tr>
+      <tr><td><strong>Phone Number:</strong></td><td>${phone}</td></tr>
+      <tr><td><strong>Website:</strong></td><td>${website}</td></tr>
+      <tr><td><strong>Select Service:</strong></td><td>${selectServices}</td></tr>
+      <tr><td><strong>Best Time To Call:</strong></td><td>${bestTimetoCall}</td></tr>
+    </table>
+
+    <p>Regards,<br>Safari Marketing Pro Team</p>
+
+    <!-- Footer -->
+    <div style="background-color: #0d6efd; color:3D3EC2; padding: 10px; text-align: center; margin-top: 30px;">
+      © 2024 - 2025 By Safari Marketing Pro.<br>
+      Lameck Laaya Moshi Tz, 1518, Tanzania
+    </div>
   </div>
-
-  <p>You have received a new Tailor-Made Safari Experiences form, below are the details:</p>
-
-  <table style="width: 100%; border-collapse: collapse;">
-    <tr><td><strong>First Name:</strong></td><td>${firstName}</td></tr>
-    <tr><td><strong>Email:</strong></td><td>${email}</td></tr>
-    <tr><td><strong>Phone Number:</strong></td><td>${phone}</td></tr>
-    <tr><td><strong>Website:</strong></td><td>${website}</td></tr>
-    <tr><td><strong>Select Service:</strong></td><td>${selectServices}</td></tr>
-    <tr><td><strong>Best Time To Call:</strong></td><td>${bestTimetoCall}</td></tr>
-  </table>
-
-  <p>Regards,<br>Safari Marketing Pro Team</p>
-
-  <div style="background-color: #0d6efd; color: #fff; padding: 10px; text-align: center; margin-top: 30px;">
-    © 2024 - 2025 By Safari Marketing Pro.<br>
-    Lameck Laaya Moshi Tz, 1518, Tanzania
-  </div>
-</div>
-
 `
+
 
     };
 
