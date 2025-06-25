@@ -124,9 +124,9 @@ router.post('/', async (req, res) => {
     </table>
 
     <!-- Body Content -->
-    <p>You have received a new Schedule Request Form . Below are the details:</p>
+    <p  style="text-align: center; >You have received a new Schedule Request Form . Below are the details:</p>
 
-    <table style="width: 100%; border-collapse: collapse;">
+    <table style="width: 100%; border-collapse: collapse; text-align: center;">
       <tr><td><strong>First Name:</strong></td><td>${firstName}</td></tr>
       <tr><td><strong>Email:</strong></td><td>${email}</td></tr>
       <tr><td><strong>Phone Number:</strong></td><td>${phone}</td></tr>

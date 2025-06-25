@@ -119,9 +119,9 @@ router.post('/', async (req, res) => {
         </td>
       </tr>
     </table>
-    <p>You’ve received a new inquiry from the “Find Out How We Can Accelerate Your Booking Flow Online” form on your website. Here are the submitted details:</p>
+    <p  style="text-align: center;>You’ve received a new inquiry from the “Find Out How We Can Accelerate Your Booking Flow Online” form on your website. Here are the submitted details:</p>
 
- <table style="width: 100%; border-collapse: collapse;">
+ <table style="width: 100%; border-collapse: collapse; text-align: center;">
       <tr><td><strong>First Name:</strong></td><td>${name}</td></tr>
       <tr><td><strong>Email:</strong></td><td>${email}</td></tr>
       <tr><td><strong>Phone Number:</strong></td><td>${countryCode} ${phone}</td></tr>
@@ -135,7 +135,7 @@ router.post('/', async (req, res) => {
     <!-- Footer -->
     <div style="background-color: #3D3EC2; color: #ffffff; padding: 10px; text-align: center; margin-top: 30px;">
       © 2024 - 2025 By Safari Marketing Pro.<br>
-      Lameck Laaya Moshi Tz, 1518, Tanzania
+      Bhagabanpur,Patrapada,Bhubaneswar
     </div>
 
 </div>
