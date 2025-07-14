@@ -59,6 +59,7 @@ import teamSoftRoutes from './routes/TeamRoutes/teamSoftRoutes.js'
 import paymentRoutes from './routes/paymentRoutes.js'
 
 
+
 dotenv.config()
 const app = express()
 
